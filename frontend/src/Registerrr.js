@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { createGlobalStyle } from 'styled-components';
+import { Link } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -117,7 +118,7 @@ const Text = styled.p`
   font-size: 13px;
 `;
 
-const Link = styled.a`
+const LinkText = styled(Link)`
   color: inherit;
 `
 
@@ -134,7 +135,7 @@ function Registerrr() {
       </Box>
       <Button>SIGN UP</Button>
       <Ref>
-        <Text>By singing up, you agree to Photo's <Link href="https://youtu.be/0SvHoaVUzkk">Terms of Service</Link> and <Link href="https://m.musinsa.com/?mod=private">Privacy Policy.</Link></Text>
+        <Text>By singing up, you agree to Photo's <LinkText to="https://youtu.be/0SvHoaVUzkk">Terms of Service</LinkText> and <LinkText to="https://m.musinsa.com/?mod=private">Privacy Policy.</LinkText></Text>
       </Ref>
     </Container>
   </>

@@ -77,8 +77,8 @@ const Box = styled.div`
   padding-right: 20px;
 `;
 
-const stylelist = [{Img: "https://static.lookpin.co.kr/20210301163656-7cb2/090975809a1d8a1c520b08b9a6248bd9.jpg?resize=880", sname: '댄디', description: '흐린 날씨의 댄디함'},
-                {Img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx3znK8-sksrkd13YERneLzdbY3V57wEi2pg&usqp=CAU", sname: '스트릿', description: '나에게 어울리는 스트릿'}
+const stylelist = [{id: "1", Img: "https://static.lookpin.co.kr/20210301163656-7cb2/090975809a1d8a1c520b08b9a6248bd9.jpg?resize=880", sname: '댄디', description: '흐린 날씨의 댄디함'},
+                {id: "2", Img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx3znK8-sksrkd13YERneLzdbY3V57wEi2pg&usqp=CAU", sname: '스트릿', description: '나에게 어울리는 스트릿'}
                             ];
 
 const Imgbox = styled.div`
@@ -94,7 +94,6 @@ const Img = styled.img`
     height: 57px;
     border-radius: 50%;
     border: none;
-    background-color: black;
     margin-right: 24px;
 
     position: absolute;
